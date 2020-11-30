@@ -17,6 +17,6 @@
 #solution
 def duplicate_count(text)
     array = text.downcase.split("")
-    arrray.uniq.count{|n| array.count(n) > 1}
+    array.uniq.count{|n| array.count(n) > 1}
     
 end
