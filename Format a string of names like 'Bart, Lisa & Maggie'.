@@ -12,24 +12,17 @@ Example:
 
 
 #####################################################
-# Better Solution
+#  Solution
 def list names
   names.map(&:values).join(', ').gsub(/, (\w+)$/, " & \\1")
 end
 
 
-sol#2
+sol#мое
 # Better Solution
 def list names
   names = names.map{ |name| name[:name] } #Создает новый массив, содержащий значения, возвращаемые блоком.
   last_name = names.pop #возвращает последнее значение
   return last_name.to_s if names.empty?
   "#{names.join(', ')} & #{last_name}"
-end
-
-def list names
-  names = names.map{ |name| name[:name] } #Создает новый массив, содержащий значения, возвращаемые блоком.
-  last_n = names.pop #возвращает последнее значение
-  return last_n.to_s if names.empty?
-  "#{names.join(', ')} & #{last_n}
 end
