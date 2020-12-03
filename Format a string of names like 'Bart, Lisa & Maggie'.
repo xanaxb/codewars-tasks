@@ -18,8 +18,7 @@ def list names
 end
 
 
-sol#мое
-# Better Solution
+sol#m
 def list names
   names = names.map{ |name| name[:name] } #Создает новый массив, содержащий значения, возвращаемые блоком.
   last_name = names.pop #возвращает последнее значение
